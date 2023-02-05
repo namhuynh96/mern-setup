@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts",
+    "dev-be": "ts-node-dev --respawn src/index.ts",
+    "dev-fe": "cd frontend && npm start",
     "build": "rm -rf dist && tsc",
     "build-fe": "cd frontend && npm run build",
     "start": "pm2 start dist/index.js"
